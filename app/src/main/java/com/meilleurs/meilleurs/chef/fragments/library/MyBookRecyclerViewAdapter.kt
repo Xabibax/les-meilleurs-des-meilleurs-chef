@@ -1,16 +1,17 @@
 package com.meilleurs.meilleurs.chef.fragments.library
 
-import androidx.recyclerview.widget.RecyclerView
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.navigation.Navigation.findNavController
-import com.google.android.material.snackbar.Snackbar
+import androidx.recyclerview.widget.RecyclerView
 import com.meilleurs.meilleurs.chef.Book
 import com.meilleurs.meilleurs.chef.R
 import com.squareup.picasso.Picasso
+
 
 class MyBookRecyclerViewAdapter(
     private val values: List<Book>
@@ -31,7 +32,9 @@ class MyBookRecyclerViewAdapter(
         holder.imageView.setOnClickListener { v ->
 //            Snackbar.make(v, item.title + " added to your cart !", Snackbar.LENGTH_LONG)
 //                .setAction("Action", null).show()
-            findNavController(v).navigate(R.id.action_FirstFragment_to_SecondFragment2)
+            val bundle = Bundle()
+            bundle.putString("cover", item.cover)
+            findNavController(v).navigate(R.id.action_FirstFragment_to_SecondFragment2, bundle)
         }
     }
 
