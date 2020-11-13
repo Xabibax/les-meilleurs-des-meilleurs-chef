@@ -33,7 +33,7 @@ class MyBookRecyclerViewAdapter(
 //            Snackbar.make(v, item.title + " added to your cart !", Snackbar.LENGTH_LONG)
 //                .setAction("Action", null).show()
             val bundle = Bundle()
-            bundle.putString("cover", item.cover)
+            bundle.putParcelable("book", item)
             findNavController(v).navigate(R.id.action_FirstFragment_to_SecondFragment2, bundle)
         }
     }

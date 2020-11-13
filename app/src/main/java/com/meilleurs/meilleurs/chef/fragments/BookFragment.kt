@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.navigation.fragment.findNavController
 import com.meilleurs.meilleurs.chef.Book
 import com.meilleurs.meilleurs.chef.R
 import com.squareup.picasso.Picasso
@@ -23,7 +22,7 @@ class BookFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val book: Book = Book(cover =  arguments?.getString("cover") ?: "")
+        val book: Book = arguments?.getParcelable<Book>("book") ?: Book()
         println(book)
         val view = inflater.inflate(R.layout.fragment_book, container, false)
         bindView(view, book)
