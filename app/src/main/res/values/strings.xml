@@ -9,4 +9,16 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="isbn">"c8fabf68–8374–48fe-a7ea-a00ccd07afff"</string>
+    <string name="title">Henri Potier à l\'école des sorciers</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="_36">35</string>
+    <string name="book_cover">http://henri-potier.xebia.fr/hp0.jpg</string>
+    <string name="synopsis">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus risus orci, id laoreet lectus lobortis et. Donec metus odio, commodo vel magna vitae, bibendum tempus orci. Quisque in dictum felis, ac vulputate nisi. Aenean tortor felis, porta sit amet auctor non, lobortis et neque. Phasellus semper mi erat, id mattis quam tristique ut. Nullam turpis sem, imperdiet vel nisi ut, venenatis commodo elit. In sit amet lectus vehicula lacus porta ultrices a quis velit. Morbi bibendum quam lacus, at iaculis lacus facilisis auctor.
+
+Nulla feugiat ac leo eu dapibus. Aliquam vel velit non nulla euismod elementum. Quisque cursus massa vitae nulla bibendum efficitur. Nunc sit amet pretium est. Nulla vel pellentesque nisl, nec efficitur massa. Fusce pellentesque pulvinar tortor in dictum. Nullam eget commodo ex, a bibendum sem. Quisque at ligula ac urna congue feugiat quis eget ante. Etiam consectetur ligula erat, id feugiat nisl auctor sed. Nullam mattis, lectus sed tincidunt placerat, nibh mauris malesuada massa, id euismod mi nisi sit amet neque. Integer vel metus eu elit pretium tincidunt ac id dolor. Donec vestibulum tempor velit ac efficitur. Vivamus feugiat lacinia lorem at faucibus. Duis aliquam dapibus mattis. Cras ac turpis sed risus lobortis maximus non eget tellus. Duis suscipit quam consequat, consequat ligula dapibus, elementum augue.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis turpis gravida, blandit lorem ut, laoreet ex. Ut dapibus dictum elit nec ultrices. Phasellus auctor urna eros, ac congue metus congue a. Aliquam semper, ante quis auctor tincidunt, eros quam hendrerit dolor, in laoreet ex erat quis ante. Phasellus nec arcu ornare, egestas nisl vel, laoreet nunc. Nunc arcu nunc, eleifend non tempus eu, pretium at mi. Sed at suscipit enim. Nam eget porttitor est, eget dictum felis. Pellentesque tincidunt pretium gravida. Pellentesque venenatis, dui vitae aliquet imperdiet, felis mauris congue turpis, vel hendrerit mi urna et enim. Mauris quis posuere velit. Suspendisse ornare nunc at odio scelerisque, non laoreet enim interdum. Fusce ut metus et nisl condimentum iaculis vitae vel enim. Praesent molestie viverra metus a dictum. Curabitur quis nulla nunc.
+    </string>
 </resources>
