@@ -41,28 +41,10 @@ class LibraryFragment : Fragment() {
                     else -> GridLayoutManager(context, columnCount)
                 }
                 val books = listOf<Book>(
-                    Book("0123456789", "TEST TITLE", "TEST PRICE", "TEST COVER"),
-                    Book("0123456789", "TEST TITLE", "TEST PRICE", "TEST COVER"),
-                    Book("0123456789", "TEST TITLE", "TEST PRICE", "TEST COVER"),
-                    Book("0123456789", "TEST TITLE", "TEST PRICE", "TEST COVER"),
-                    Book("0123456789", "TEST TITLE", "TEST PRICE", "TEST COVER"),
-                    Book("0123456789", "TEST TITLE", "TEST PRICE", "TEST COVER"),
-                    Book("0123456789", "TEST TITLE", "TEST PRICE", "TEST COVER"),
-                    Book("0123456789", "TEST TITLE", "TEST PRICE", "TEST COVER"),
-                    Book("0123456789", "TEST TITLE", "TEST PRICE", "TEST COVER"),
-                    Book("0123456789", "TEST TITLE", "TEST PRICE", "TEST COVER"),
-                    Book("0123456789", "TEST TITLE", "TEST PRICE", "TEST COVER"),
-                    Book("0123456789", "TEST TITLE", "TEST PRICE", "TEST COVER"),
-                    Book("0123456789", "TEST TITLE", "TEST PRICE", "TEST COVER"),
-                    Book("0123456789", "TEST TITLE", "TEST PRICE", "TEST COVER"),
-                    Book("0123456789", "TEST TITLE", "TEST PRICE", "TEST COVER"),
-                    Book("0123456789", "TEST TITLE", "TEST PRICE", "TEST COVER"),
-                    Book("0123456789", "TEST TITLE", "TEST PRICE", "TEST COVER"),
-                    Book("0123456789", "TEST TITLE", "TEST PRICE", "TEST COVER"),
-                    Book("0123456789", "TEST TITLE", "TEST PRICE", "TEST COVER"),
-                    Book("0123456789", "TEST TITLE", "TEST PRICE", "TEST COVER"),
-                    Book("0123456789", "TEST TITLE", "TEST PRICE", "TEST COVER"),
-                    Book("0123456789", "TEST TITLE", "TEST PRICE", "TEST COVER"),
+                    Book("c8fabf68-8374-48fe-a7ea-a00ccd07afff",
+                        "Henri Potier à l'école des sorciers",
+                        "35",
+                        "http://henri-potier.xebia.fr/hp0.jpg"),
                 )
                 adapter = MyBookRecyclerViewAdapter(books)
             }

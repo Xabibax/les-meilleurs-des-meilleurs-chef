@@ -6,87 +6,87 @@
     android:layout_height="match_parent"
     tools:context=".fragments.BookFragment">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView_fragment_book"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/cardView_fragment_book"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/cardView_fragment_book"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/cardView_fragment_book"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
 
-            <ImageView
-                android:id="@+id/cover_fragment_book"
-                android:layout_width="175dp"
-                android:layout_height="300dp"
-                android:layout_margin="10dp"
-                android:contentDescription="@string/book_cover"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="linearLayout_fragment_book"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:src="@drawable/hp0" />
+<!--            <ImageView-->
+<!--                android:id="@+id/cover_fragment_book"-->
+<!--                android:layout_width="175dp"-->
+<!--                android:layout_height="300dp"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:contentDescription="@string/book_cover"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toStartOf="linearLayout_fragment_book"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                tools:src="@drawable/hp0" />-->
 
-            <LinearLayout
-                android:id="@+id/linearLayout_fragment_book"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/cover_fragment_book"
-                app:layout_constraintTop_toTopOf="parent">
+<!--            <LinearLayout-->
+<!--                android:id="@+id/linearLayout_fragment_book"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:orientation="vertical"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@id/cover_fragment_book"-->
+<!--                app:layout_constraintTop_toTopOf="parent">-->
 
-                <TextView
-                    android:id="@+id/isbn_fragment_book"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/isbn" />
+<!--                <TextView-->
+<!--                    android:id="@+id/isbn_fragment_book"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/isbn" />-->
 
-                <TextView
-                    android:id="@+id/title_fragment_book"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/title" />
+<!--                <TextView-->
+<!--                    android:id="@+id/title_fragment_book"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/title" />-->
 
-                <TextView
-                    android:id="@+id/price_fragment_book"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/_36" />
+<!--                <TextView-->
+<!--                    android:id="@+id/price_fragment_book"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/_36" />-->
 
-                <Button
-                    android:id="@+id/button_second"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/add_to_cart" />
+<!--                <Button-->
+<!--                    android:id="@+id/button_second"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/add_to_cart" />-->
 
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
 
-    </androidx.cardview.widget.CardView>
+<!--    </androidx.cardview.widget.CardView>-->
 
-    <ScrollView
-        android:id="@+id/scrollView_fragment_book"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView_fragment_book">
+<!--    <ScrollView-->
+<!--        android:id="@+id/scrollView_fragment_book"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/cardView_fragment_book">-->
 
-        <TextView
-            android:id="@+id/synopsis_fragment_book"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/synopsis" />
-    </ScrollView>
+<!--        <TextView-->
+<!--            android:id="@+id/synopsis_fragment_book"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/synopsis" />-->
+<!--    </ScrollView>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
