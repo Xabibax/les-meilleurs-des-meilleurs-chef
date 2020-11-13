@@ -8,9 +8,15 @@ import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ListView
 import com.google.android.material.snackbar.Snackbar
 import com.meilleurs.meilleurs.chef.Book
 import com.meilleurs.meilleurs.chef.R
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 /**
  * A fragment representing a list of Items.
@@ -18,9 +24,18 @@ import com.meilleurs.meilleurs.chef.R
 class LibraryFragment : Fragment() {
 
     private var columnCount = 2
+    private lateinit var service: HenriPotierService
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        val retrofit: Retrofit = Retrofit.Builder()
+            .baseUrl("http://henri-potier.xebia.fr/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+
+        service = retrofit.create(HenriPotierService::class.java)
+
 
         arguments?.let {
             columnCount = it.getInt(ARG_COLUMN_COUNT)
@@ -33,20 +48,26 @@ class LibraryFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_library_list, container, false)
 
-        // Set the adapter
         if (view is RecyclerView) {
             with(view) {
                 layoutManager = when {
                     columnCount <= 1 -> LinearLayoutManager(context)
                     else -> GridLayoutManager(context, columnCount)
                 }
-                val books = listOf<Book>(
-                    Book("c8fabf68-8374-48fe-a7ea-a00ccd07afff",
-                        "Henri Potier à l'école des sorciers",
-                        "35",
-                        "http://henri-potier.xebia.fr/hp0.jpg"),
-                )
-                adapter = MyBookRecyclerViewAdapter(books)
+
+                val booksCall: Call<List<Book>> = service.listBooks()
+
+                booksCall.enqueue(object : Callback<List<Book>> {
+                    override fun onResponse(call: Call<List<Book>>, response: Response<List<Book>>) {
+                        val books = response.body()
+                        if (books != null) {
+                            adapter = MyBookRecyclerViewAdapter(books)
+                        }
+                    }
+                    override fun onFailure(call: Call<List<Book>>, t: Throwable) {
+                    }
+                })
+
             }
         }
 
