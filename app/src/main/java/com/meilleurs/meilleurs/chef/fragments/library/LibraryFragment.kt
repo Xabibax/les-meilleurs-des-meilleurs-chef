@@ -8,10 +8,9 @@ import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ListView
-import com.google.android.material.snackbar.Snackbar
 import com.meilleurs.meilleurs.chef.Book
 import com.meilleurs.meilleurs.chef.R
+import com.meilleurs.meilleurs.chef.services.HenriPotierService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
