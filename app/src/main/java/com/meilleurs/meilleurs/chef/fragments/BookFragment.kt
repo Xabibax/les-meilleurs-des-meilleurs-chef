@@ -18,8 +18,8 @@ import com.squareup.picasso.Picasso
 class BookFragment : Fragment() {
 
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         val book: Book = arguments?.getParcelable<Book>("book") ?: Book()
@@ -33,6 +33,8 @@ class BookFragment : Fragment() {
         view.findViewById<TextView>(R.id.title_fragment_book).text = "${book.title}"
         view.findViewById<TextView>(R.id.price_fragment_book).text = "${book.price}"
         view.findViewById<TextView>(R.id.isbn_fragment_book).text = "${book.isbn}"
+        view.findViewById<TextView>(R.id.synopsis_fragment_book).text =
+            String.format("${book.synopsis.joinToString("%n%n")}")
         Picasso.get()
             .load(book.cover)
             .into(view.findViewById<ImageView>(R.id.cover_fragment_book))
