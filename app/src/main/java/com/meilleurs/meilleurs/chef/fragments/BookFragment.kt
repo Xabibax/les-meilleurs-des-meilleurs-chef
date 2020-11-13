@@ -23,9 +23,9 @@ class BookFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val book: Book = Book()
+        val book: Book = Book(cover =  arguments?.getString("cover") ?: "")
+        println(book)
         val view = inflater.inflate(R.layout.fragment_book, container, false)
-
         bindView(view, book)
         return view
     }
@@ -35,7 +35,7 @@ class BookFragment : Fragment() {
         view.findViewById<TextView>(R.id.price_fragment_book).text = "${book.price}"
         view.findViewById<TextView>(R.id.isbn_fragment_book).text = "${book.isbn}"
         Picasso.get()
-            .load(R.string.hp_api.toString())
+            .load(book.cover)
             .into(view.findViewById<ImageView>(R.id.cover_fragment_book))
     }
 
