@@ -26,12 +26,12 @@
                 android:layout_margin="10dp"
                 android:contentDescription="@string/book_cover"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="linearLayout_fragment_book"
+                app:layout_constraintEnd_toStartOf="@id/linearLayout_fragment_book"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:src="@drawable/hp0" />
 
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linearLayout_fragment_book"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -39,34 +39,45 @@
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toEndOf="@id/cover_fragment_book"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.149">
 
                 <TextView
                     android:id="@+id/isbn_fragment_book"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/isbn" />
+                    android:text="@string/isbn"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
 
                 <TextView
                     android:id="@+id/title_fragment_book"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/title" />
+                    android:text="@string/title"
+                    app:layout_constraintBottom_toTopOf="@id/price_fragment_book"
+                    app:layout_constraintTop_toBottomOf="@+id/isbn_fragment_book" />
 
                 <TextView
                     android:id="@+id/price_fragment_book"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/_36" />
+                    android:text="@string/_36"
+                    app:layout_constraintBottom_toTopOf="@id/button_second"
+                    app:layout_constraintTop_toBottomOf="@id/title_fragment_book" />
 
                 <Button
                     android:id="@+id/button_second"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/add_to_cart" />
+                    android:text="@string/add_to_cart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/price_fragment_book" />
 
-            </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
