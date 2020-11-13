@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.navigation.Navigation.findNavController
 import com.google.android.material.snackbar.Snackbar
 import com.meilleurs.meilleurs.chef.Book
 import com.meilleurs.meilleurs.chef.R
@@ -28,8 +29,9 @@ class MyBookRecyclerViewAdapter(
             .into(holder.imageView)
         holder.titleView.text = item.title
         holder.imageView.setOnClickListener { v ->
-            Snackbar.make(v, item.title + " added to your cart !", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+//            Snackbar.make(v, item.title + " added to your cart !", Snackbar.LENGTH_LONG)
+//                .setAction("Action", null).show()
+            findNavController(v).navigate(R.id.action_FirstFragment_to_SecondFragment2)
         }
     }
 

@@ -10,11 +10,14 @@
         android:name="com.meilleurs.meilleurs.chef.fragments.library.LibraryFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_library">
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment2"
+            app:destination="@id/SecondFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
         android:name="com.meilleurs.meilleurs.chef.fragments.BookFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/fragment_book">
     </fragment>
 </navigation>

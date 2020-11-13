@@ -36,7 +36,7 @@ class BookFragment : Fragment() {
         view.findViewById<TextView>(R.id.isbn_fragment_book).text = "${book.isbn}"
         Picasso.get()
             .load(R.string.hp_api.toString())
-            .into(view.findViewById<ImageView>(R.id.title_fragment_book))
+            .into(view.findViewById<ImageView>(R.id.cover_fragment_book))
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
