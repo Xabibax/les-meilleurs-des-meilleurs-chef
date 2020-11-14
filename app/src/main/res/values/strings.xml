@@ -4,11 +4,7 @@
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="isbn">"c8fabf68–8374–48fe-a7ea-a00ccd07afff"</string>
     <string name="title">Henri Potier à l\'école des sorciers</string>
     <string name="add_to_cart">Add to cart</string>
@@ -22,4 +18,5 @@ Nulla feugiat ac leo eu dapibus. Aliquam vel velit non nulla euismod elementum. 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis turpis gravida, blandit lorem ut, laoreet ex. Ut dapibus dictum elit nec ultrices. Phasellus auctor urna eros, ac congue metus congue a. Aliquam semper, ante quis auctor tincidunt, eros quam hendrerit dolor, in laoreet ex erat quis ante. Phasellus nec arcu ornare, egestas nisl vel, laoreet nunc. Nunc arcu nunc, eleifend non tempus eu, pretium at mi. Sed at suscipit enim. Nam eget porttitor est, eget dictum felis. Pellentesque tincidunt pretium gravida. Pellentesque venenatis, dui vitae aliquet imperdiet, felis mauris congue turpis, vel hendrerit mi urna et enim. Mauris quis posuere velit. Suspendisse ornare nunc at odio scelerisque, non laoreet enim interdum. Fusce ut metus et nisl condimentum iaculis vitae vel enim. Praesent molestie viverra metus a dictum. Curabitur quis nulla nunc.
     </string>
     <string name="hp_api">http://henri-potier.xebia.fr/books/</string>
+    <string name="cover_description">Cover description</string>
 </resources>

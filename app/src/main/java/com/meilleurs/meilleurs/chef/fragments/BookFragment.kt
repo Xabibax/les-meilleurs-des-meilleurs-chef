@@ -22,19 +22,18 @@ class BookFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val book: Book = arguments?.getParcelable<Book>("book") ?: Book()
-        println(book)
+        val book: Book = arguments?.getParcelable("book") ?: Book()
         val view = inflater.inflate(R.layout.fragment_book, container, false)
         bindView(view, book)
         return view
     }
 
     private fun bindView(view: View, book: Book) {
-        view.findViewById<TextView>(R.id.title_fragment_book).text = "${book.title}"
-        view.findViewById<TextView>(R.id.price_fragment_book).text = "${book.price}"
-        view.findViewById<TextView>(R.id.isbn_fragment_book).text = "${book.isbn}"
+        view.findViewById<TextView>(R.id.title_fragment_book).text = book.title
+        view.findViewById<TextView>(R.id.price_fragment_book).text = book.price
+        view.findViewById<TextView>(R.id.isbn_fragment_book).text = book.isbn
         view.findViewById<TextView>(R.id.synopsis_fragment_book).text =
-            String.format("${book.synopsis.joinToString("%n%n")}")
+            String.format(book.synopsis.joinToString("%n%n"))
         Picasso.get()
             .load(book.cover)
             .into(view.findViewById<ImageView>(R.id.cover_fragment_book))
